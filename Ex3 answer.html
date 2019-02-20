@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		
+	//Ex 03
+	/*
+		
+	Understand the ‘this’ keyword in JavaScript.
+	● Declare a global variable named vehicleName in the window object
+	● Declare a method named printVehicleName to print out the vehicle name
+	● Declare an object named Vehicle(using object literal notation) which have a 
+	variable called vehicleName and declare a function named getVehicleName and 
+	assign it with the printVehicleName
+	● Execute the printVehicleName function and the getVehicleName functions 
+	to see the results
+	● Correct the getVehicleName to print out the global variable vehicleName 
+	using the this keyword
+		
+	*/
+		
+		var vehicleName = "Toyota";
+		
+		function printVehicleName(){
+			console.log(this.vehicleName);
+		}
+		
+		printVehicleName();
+		
+		var Vehicle = {
+			vehicleName : 'BMW',
+			
+			getVehiclName : printVehicleName
+			
+		};
+		
+		console.log(this);
+		
+		Vehicle.getVehiclName();
+		
+		printVehicleName();
+
+	</script>
+</head>
+<body>
+</body>
+</html>

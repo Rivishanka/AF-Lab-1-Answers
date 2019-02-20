@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		
+		//////////////////////////////////////////////////////////////////////////////
+		
+		//Ex 04
+		
+		/*
+		Create a separate function using JavaScript closure which accepts 
+		the tax percentage and returns a function which accepts the amount 
+		and returns the amount after adding tax percentage. Try adding tax percentage 
+		to ‘this’ object and check if it works.
+		*/
+		
+		function calcTax(tax){
+		
+			function TotalAmount(amount){
+				return amount+tax;
+			}
+			
+			return TotalAmount;
+		}
+
+		var amount = calcTax(5);
+		
+		console.log(amount(100));
+		
+		//////////////////////////////////////////////////////////////////////////////
+		
+		
+	</script>
+</head>
+<body>
+</body>
+</html>

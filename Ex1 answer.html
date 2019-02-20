@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		
+		//Ex 01
+		/*
+		Create a function as a variable (function expression) that prints ‘Hello World’
+		to console and another function which accepts a variable. 
+		The argument passed to the second function should be executed as a function 
+		inside the body. Call the second function passing the first function as 
+		the argument. Check the output.
+		*/
+		
+		var f1 = function(){
+			console.log("Hello world!!!");
+		}
+		
+		function f2(demo){
+			demo();
+		}
+		
+		f2(f1);
+
+	</script>
+</head>
+<body>
+</body>
+</html>
